@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 
 /// <reference types="vitest" />
 
 import { defineConfig } from "vite";
 import { vitestSetupFilePath, getClarinetVitestsArgv } from "@hirosystems/clarinet-sdk/vitest";
+=======
+/// <reference types="vitest" />
+
+import { defineConfig } from "vite";
+import {
+  vitestSetupFilePath,
+  getClarinetVitestsArgv,
+} from "@hirosystems/clarinet-sdk/vitest";
+>>>>>>> efb00ba503a40377b5247b79e9a568c9c1fb3cfc
 
 /*
   In this file, Vitest is configured so that it works seamlessly with Clarinet and the Simnet.
@@ -39,4 +49,7 @@ export default defineConfig({
     },
   },
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> efb00ba503a40377b5247b79e9a568c9c1fb3cfc

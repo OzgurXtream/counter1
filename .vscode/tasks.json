@@ -1,5 +1,6 @@
 
 {
+<<<<<<< HEAD
   "version": "2.0.0",
   "tasks": [
     {
@@ -16,4 +17,21 @@
       "label": "npm test"
     }
   ]
+=======
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "check contracts",
+            "group": "test",
+            "type": "shell",
+            "command": "clarinet check"
+        },
+        {
+            "label": "test contracts",
+            "group": "test",
+            "type": "shell",
+            "command": "clarinet test"
+        }
+    ]
+>>>>>>> efb00ba503a40377b5247b79e9a568c9c1fb3cfc
 }

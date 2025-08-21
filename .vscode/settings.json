@@ -1,4 +1,8 @@
 
 {
+<<<<<<< HEAD
+=======
+    "deno.enable": true,
+>>>>>>> efb00ba503a40377b5247b79e9a568c9c1fb3cfc
     "files.eol": "\n"
 }

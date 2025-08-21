@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 ;; Counter Contract: Increment/decrement counter with permission controls
 
 ;; Define a map data structure to store individual counts
+=======
+;; An on-chain counter that stores a count for each individual
+
+;; Define a map data structure
+>>>>>>> efb00ba503a40377b5247b79e9a568c9c1fb3cfc
 (define-map counters
   principal
   uint
 )
 
+<<<<<<< HEAD
 ;; Define a map for authorized counting
 (define-map allowances
   (tuple (owner principal) (spender principal))
@@ -21,11 +28,14 @@
 (define-constant 'ERR_BELOW_MIN_COUNT u2)
 (define-constant 'MIN_COUNT u5)
 
+=======
+>>>>>>> efb00ba503a40377b5247b79e9a568c9c1fb3cfc
 ;; Function to retrieve the count for a given individual
 (define-read-only (get-count (who principal))
   (default-to u0 (map-get? counters who))
 )
 
+<<<<<<< HEAD
 ;; Function to get the total count
 (define-read-only (get-total-count)
   (ok (var-get total-count))
@@ -92,3 +102,9 @@
     )
   )
 )
+=======
+;; Function to increment the count for the caller
+(define-public (count-up)
+  (ok (map-set counters tx-sender (+ (get-count tx-sender) u1)))
+)
+>>>>>>> efb00ba503a40377b5247b79e9a568c9c1fb3cfc

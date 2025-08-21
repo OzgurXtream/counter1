@@ -1,4 +1,5 @@
 [project]
+<<<<<<< HEAD
 name = 'counter-project'
 description = ''
 authors = []
@@ -11,13 +12,31 @@ clarity_version = 3
 epoch = 'latest'
 [repl.analysis]
 passes = ['check_checker']
+=======
+name = "counter"
+description = "Demonstrates how to use and interact with variables in Clarity by incrementing a 32-bit unsigned integer"
+authors = []
+telemetry = true
+cache_dir = './.cache'
+
+[contracts.counter]
+path = "contracts/counter.clar"
+clarity_version = 3
+epoch = 3.0
+
+[repl.analysis]
+passes = ["check_checker"]
+>>>>>>> efb00ba503a40377b5247b79e9a568c9c1fb3cfc
 
 [repl.analysis.check_checker]
 strict = false
 trusted_sender = false
 trusted_caller = false
 callee_filter = false
+<<<<<<< HEAD
 
 [repl.remote_data]
 enabled = false
 api_url = 'https://api.hiro.so'
+=======
+>>>>>>> efb00ba503a40377b5247b79e9a568c9c1fb3cfc
